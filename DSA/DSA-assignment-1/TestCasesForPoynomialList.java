@@ -13,12 +13,11 @@ import org.junit.Test;
 public class TestCasesForPoynomialList {
 
 	@Test
-	public void test_When_CorrectArgumentPasses_Expected_Integer()
-			throws Exception {
-
+	public void test_When_CorrectArgumentPasses_Expected_Integer()throws Exception {
 		int[] coefficients = { 1, 2 };
 		char[][] variable = { { 'x', 'y' }, { 'x', 'y' } };
 		int[][] powers = { { 1, 2 }, { 2, 6 } };
+		
 		PolynomialList list = new PolynomialList(coefficients, variable, powers);
 		int degree = list.findDegree();
 		assertEquals(8, degree);
@@ -30,6 +29,7 @@ public class TestCasesForPoynomialList {
 		int[] coefficients = { 1 };
 		char[][] variable = { { 'x', 'y' }, { 'x', 'y' } };
 		int[][] powers = { { 1, 2 }, { 2, 6 } };
+		
 		try {
 			PolynomialList list = new PolynomialList(coefficients, variable,powers);
 			int degree = list.findDegree();

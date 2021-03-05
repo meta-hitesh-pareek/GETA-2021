@@ -17,8 +17,8 @@ public class TestCasesForLinkedList {
 	@Test
 	public void test_WhenSizeOfListIsZero_Expected_0() {
 		LinkedList list = new LinkedList();
-
 		int actual = list.size(list.head);
+		
 		assertEquals(0, actual);
 	}
 
@@ -30,6 +30,7 @@ public class TestCasesForLinkedList {
 		list.addLast(4);
 		list.addLast(6);
 		int actual = list.size(list.head);
+		
 		assertEquals(3, actual);
 	}
 
@@ -48,6 +49,7 @@ public class TestCasesForLinkedList {
 		Node testListTemp = testList.head;
 		Node listTemp = list.head;
 		int size = testList.size(testList.head);
+		
 		for (int index = 0; index < size; index++) {
 			assertEquals(testListTemp.data, listTemp.data);
 			listTemp = listTemp.next;
@@ -61,6 +63,7 @@ public class TestCasesForLinkedList {
 		list.addLast(2);
 		list.addLast(4);
 		list.addLast(6);
+		
 		try {
 			list.head = list.rotateRight(2, 3, 1);
 		} catch (AssertionError e) {

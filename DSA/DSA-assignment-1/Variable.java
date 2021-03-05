@@ -40,5 +40,4 @@ public class Variable {
 	public char getVarible() {
 		return this.variable;
 	}
-
 }
