@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Metacube Parking System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <nav>
+      <img id="metacubeLogo" src="meatcubeLogo.png" />
+      <div id="navBar">
+        <a class="navlink" href="#employee">Add Employee</a>
+        <a class="navlink" href="#vehicle">Add vehicle</a>
+        <a class="navlink" href="#feedback">FeedBack</a>
+        <a class="navlink" href="#pricing">Pricing</a>
+      </div>
+    </nav>
+
+    <!-- Image for banner -->
+
+    <img id="bannerImage" src="parking.jfif" />
+
+    <!-- Section of Adding new employee -->
+    <section id="employee">
+      <h3 class="sectionHead">Employee Details</h3>
+      <form id="form">
+        <!-- Taking name of employee -->
+        <div class="EmployeeDetails">
+          <label for="firstName">First Name:- </label>
+          <input type="text" id="firstName" name="firstName" />
+          <label for="lastBame">LastName:- </label>
+          <input type="text" id="LastName" name="LastName" />
+        </div>
+
+        <!-- Taking Gender of employee -->
+        <div>
+          <label>Gender</label> <label for="male">Male</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="female">Female</label>
+          <input type="radio" id="Female" name="gender" value="Female" />
+          <label for="other">Other</label>
+          <input type="radio" id="other" name="gender" value="other" />
+        </div>
+
+        <!-- Email of employee -->
+        <div>
+          <label for="email">E-mail:-</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+        <label for="confirmPassword">Confirm Password:-</label>
+        <input type="password" id="confoirmPassword" name="confirmPassword" />
+
+        <!-- Contact details -->
+        <div>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+        <button>Add Employee</button>
+      </form>
+    </section>
+
+    <!-- Section for adding new vehicle -->
+    <section id="vehicle">
+      <h3 class="sectionHead">Add vehicle</h3>
+      <form id="form">
+        <div>
+          <label for="company">Vehicle company</label>
+          <input type="text" id="company" name="company" />
+        </div>
+
+        <div>
+          <label for="model">Vehicle model</label>
+          <input type="text" id="model" name="model" />
+        </div>
+
+        <div>
+          <label for="type">Vehicle type</label>
+          <input type="text" id="type" name="type" />
+        </div>
+
+        <div>
+          <label for="number">Vehicle number</label>
+          <input type="text" id="number" name="number" />
+        </div>
+
+        <div>
+          <label for="employeeId">Employee ID</label>
+          <input type="text" id="empId" name="empId" />
+        </div>
+
+        <div>
+          <label for="Identification">Identification</label>
+          <textarea id="identification" name="identification"></textarea>
+        </div>
+        
+        <button>Add Vehicle</button>
+      </form>
+    </section>
+
+    <!-- Section For Feedback -->
+    <section id="feedback">
+      <h3 class="feedbackHeading">Give us a feedback</h3>
+     <div class="feedback-input">
+         <div>
+        <input type="text" id="name" name="name" placeholder="name" />
+      </div>
+      <div>
+        <input
+          type="email"
+          id="emp-email"
+          name="emp-email"
+          placeholder="Email"
+        />
+      </div>
+      <div>
+        <input type="text" id="subject" name="subject" placeholder="Subject" />
+      </div>
+      <div>
+        <textarea rows="4" cols="34"
+          id="message"
+          name="message"
+          placeholder="Type your message here"
+        ></textarea>
+     
+    </div>
+     
+    <button id="messageButton">Send Feedback</button>
+    </div>
+    </section>
+
+    <!-- Section for pricing -->
+    <section id="pricing">
+      <h3 class="pricingHeading">Pricing Details</h3>
+      <div class="purchase-options">
+      <div class="vehicleDisplay">
+        <h3 class="vechileTitle">CYCLE</h3>
+        <div class="parkingPrice">
+          <h2>$100</h2>
+          <h4>/month</h4>
+        </div>
+        <div class="priceRange">
+          <p>$5 Daily</p>
+          <p>$100 Monthly</p>
+          <p>$500 Yearly</p>
+        </div>
+        <button class="purchaseButton">PURCHASE NOW</button>
+      </div>
+
+      <div class="vehicleDisplay">
+        <h3 class="vechileTitle">MOTOR CYCLE</h3>
+        <div class="parkingPrice">
+          <h2>$200</h2>
+          <h4>/month</h4>
+        </div>
+        <div class="priceRange">
+          <p>$10 Daily</p>
+          <p>$200 Monthly</p>
+          <p>$1000 Yearly</p>
+        </div>
+        <button class="purchaseButton">PURCHASE NOW</button>
+      </div>
+
+      <div class="vehicleDisplay">
+        <h3 class="vechileTitle">FOUR WHEELERS</h3>
+        <div class="parkingPrice">
+          <h2>500</h2>
+          <h4>/month</h4>
+        </div>
+        <div class="priceRange">
+          <p>$20 Daily</p>
+          <p>$500 Monthly</p>
+          <p>$3500 Yearly</p>
+        </div>
+        <button class="purchaseButton">PURCHASE NOW</button>
+      </div>
+    </div>
+    </section>
+  </body>
+</html>

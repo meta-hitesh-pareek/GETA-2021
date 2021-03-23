@@ -1,0 +1,146 @@
+/* Setting deafault margin and padding to 0 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color:darkcyan ;
+}
+
+/* Style for the navigation bar */
+nav {
+  height: 30px;
+  background-color: indigo;
+  padding-bottom: 20px;
+  vertical-align: top;
+}
+
+/* Styling links of the navigation bar*/
+.navlink {
+  text-decoration: none;
+  padding: 4px 8px;
+  color: white;
+}
+#navBar {
+  position: absolute;
+  display: inline-block;
+  vertical-align: super;
+  margin-left: 50px;
+  top: 20px;
+}
+#metacubeLogo {
+  margin-top: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+.sectionHead {
+  border-radius: 10px;
+  border: 2px solid darkslateblue;
+  background-color: lightskyblue;
+}
+
+.feedbackHeading {
+  border: 2px solid darkslateblue;
+  background-color: lightskyblue;
+}
+
+.pricingHeading {
+  border: 2px solid darkslateblue;
+  background-color: lightskyblue;
+}
+
+#form button {
+  background-color: indigo;
+  color: white;
+  border-radius: 10px;
+  /* width: 80px; */
+  margin-left: 100px;
+}
+
+#form {
+  margin-top: 10px;
+}
+
+/* Seeting the height and width of the cover image */
+#bannerImage {
+  width: 100%;
+  height: 200px;
+}
+
+#feedback {
+  text-align: center;
+}
+
+#feedback input {
+  width: 250px;
+  height: 20px;
+}
+
+input {
+  border-radius: 6px;
+  margin: 10px 10px;
+}
+
+label {
+  margin: 10px 10px;
+}
+
+textarea {
+  border-radius: 20px;
+  padding-left: 40px;
+}
+
+/* Style "Send Feedback" button */
+#messageButton {
+  border-radius: 20px;
+  height: 40px;
+  color: white;
+  background-color: yellowgreen;
+}
+
+.vehicleDisplay {
+  margin-top: 30px;
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  border: 2px solid indigo;
+  border-radius: 40px;
+  margin-left: 16px;
+}
+
+.purchaseButton {
+  border: 1px solid indigo;
+  border-radius: 4px;
+  margin: 2px 2px;
+}
+
+.parkingPrice {
+  margin-left: 65px;
+  width: 70px;
+  border: 2px solid indigo;
+  border-radius: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#pricing {
+  text-align: center;
+}
+
+/* Seeting margin and padding for every section */
+section {
+  margin-bottom: 20px;
+  padding: 20px 20px;
+}
+
+.purchaseButton {
+  color: indigo;
+}
+
+/* Making collapsed class for further use for altering class */
+.collapsed {
+  display: none;
+}
