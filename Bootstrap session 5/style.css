@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+.body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+#dropdownMenuButton{
+    width: 100%;
+    text-align: left;
+}
+#maps span{
+    background-color: red;
+}
+.active{
+    background-color: royalblue;
+    opacity: 0.7;
+}
+.dropdown button{
+   background-color: white;
+}
+.logo-text{
+    color: rgb(77, 67, 67);
+    font-weight: 700;
+}
+navbar{
+background-color: blue;
+margin-top: 0px;
+height: 60px;
+border-radius:20px;
+}
+.navbar-search{
+    height:auto;
+    width: 100px;
+    border-radius: 6px;
+    padding-left: 5px;
+}
+.email-badge,.notify-badge{
+    padding: 2px;
+    width: 14px;
+    margin-bottom: -6px;
+    z-index: 2;
+    margin-left: 6px;
+}
+.dashboard-heading{
+    font-weight: 700;
+    font-size: 20px;
+
+}
+.nav-info{
+    color: white;
+}
+.profile-image{
+    text-align: center;
+    height: 40px;
+    width: 40px;
+   border-radius: 50%;
+   background-color: rgb(221, 223, 233);
+}
+main{
+    background-color: rgba(236, 231, 231, 0.781);
+}
+#camera-image{
+    background-color: rgb(169, 199, 255);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 4px;
+}
+#visit-rate,#visit-rate img{ 
+    color: red;
+}
+#new-users,#new-orders,#total-sales{
+    color: green;
+}
+
+.price{
+    font-weight: 700;
+}
+.graph{
+    background-color:white ;
+}
+.graph-heading,.revenue-heading{
+    font-weight: 700;
+}
+.chart{
+    background-color: white;
+}
+
+main{
+    padding: 0px;
+}
+#canada{
+    background-color: blueviolet;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+#usa{
+    background-color: rgb(39, 117, 180);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+#london{
+    background-color: rgb(189, 186, 192);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.graph,.chart{
+    background-color: rgba(236, 231, 231, 0.781);
+}
+.graph-svg{
+    transform: scale(0.9);
+}
+.chart-image{
+    transform: scale(0.8);
+}
+.graph{
+    background-color: white;
+}
+input{
+    background-color:rgb(191, 191, 247);
+    border-radius: 40px;
+    border: none;
+    width: 100px;
+}
+
+.form-input{
+background-color:rgb(191, 191, 247);
+width: 200px;
+}
