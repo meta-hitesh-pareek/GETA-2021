@@ -1,0 +1,303 @@
+/* Putting padding and margin 0 initially */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("images/bodybg.png");
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+nav {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+}
+.nav-bg{
+    background-color:rgba(29, 10, 99, 0.973);
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    z-index: 4;
+}
+.bg-img {
+  background-image: url("images/homebg.png");
+  min-height: 480px;
+  background-size: 100% 100%;
+  width: auto;
+  padding-right: 20px;
+ 
+}
+ .container {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
+.container img {
+  display: inline;
+  float: left;
+  margin: auto;
+}
+.container div {
+  display: inline;
+}
+.top-icon {
+  float: right;
+  margin-left: 300px;
+  margin: auto;
+}
+.top-icon img{
+    background-color: white;
+    margin: 6px 6px;
+}
+.topnav a {
+  text-decoration: none;
+  color: white;
+  margin: 10px 10px;
+  text-align: center;
+}
+.top-content {
+  font-size: 30px;
+  color: white;
+  margin-left: 50px;
+  margin-top: 100px;
+  width: auto;
+  height: auto;
+}
+.top-content p {
+  width: 220px;
+}
+.main-buttons {
+  height: auto;
+  margin-left: 20px;
+  display: inline;
+  width: 200px;
+  float: left;
+}
+.main-buttons button {
+  height: 40px;
+  width: 70px;
+}
+.download-button {
+  background-color: red;
+  color: white;
+}
+.feature-button {
+  background-color: blue;
+}
+.top-image img {
+  height: 200px;
+  width: auto;
+  display: inline;
+  float: right;
+  margin-right: 50px;
+}
+.perfect-features {
+  background-image: url("images/bodybg.png");
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.perfect-features > p:nth-child(1) {
+  color: blue;
+  margin: 10px 10px;
+}
+.advantages {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.advantages div {
+  margin-right: 50px;
+  margin-left: 50px;
+  display: inline;
+  font-family: sans-serif;
+}
+
+.advantages div p:nth-child(2) {
+  font-size: 14px;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+.feature-image {
+  justify-content: center;
+  width: auto;
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.feature-image :nth-child(2) {
+  z-index: 2;
+}
+.feature-image :last-child {
+  transform: skewY(15deg);
+  margin-top: 60px;
+  margin-left: -100px;
+}
+.feature-image :first-child {
+  transform: skewY(-10deg);
+  margin-top: 60px;
+  margin-right: -100px;
+}
+.screenshot {
+  margin-top: 50px;
+  background-image: url("images/bodybg.png");
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.screenshot h3 {
+  color: blue;
+}
+
+.cloudy h3,
+.sunny h3,
+.rainy h3 {
+  color: black;
+}
+
+.cloudy-images,
+.sunny-images,
+.rainy-images {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.cloudy-message,
+.sunny-message {
+  font-weight: 800;
+  font-size: 20px;
+  margin-left: -150px;
+}
+.cloudy-message p,
+.sunny-message p,
+.rainy-message p {
+  font-size: 16px;
+  font-weight: 100;
+  opacity: 0.5;
+}
+.cloudy img,
+.sunny img,
+.rainy img {
+  width: auto;
+  display: inline;
+  z-index: 2;
+  display: inline;
+}
+
+.cloudy-bg-text {
+  font-size: 190px;
+  transform: rotateZ(90deg);
+  margin-left: -260px;
+  color: slategrey;
+  opacity: 0.5;
+}
+
+.sunny {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  float: right;
+  width: 100%;
+}
+.sunny-message {
+  margin-right: 100px;
+  width: auto;
+}
+.sunny-bg-text {
+  font-size: 190px;
+  transform: rotateZ(90deg);
+  margin-left: -230px;
+  color: slategrey;
+  opacity: 0.5;
+}
+.rainy-message {
+  width: auto;
+}
+.rainy-bg-text {
+  font-size: 190px;
+  transform: rotateZ(90deg);
+  margin-left: -210px;
+  color: slategrey;
+  opacity: 0.5;
+}
+blockquote::before {
+  content: open-quote;
+  font-size: 200%;
+  color: blue;
+}
+blockquote::after {
+  content: close-quote;
+  font-size: 200%;
+  color: blue;
+}
+.review1,
+.review2,
+.review3,
+.review4 {
+  width: 50%;
+  padding: 40px 40px;
+}
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 100px;
+  text-align: center;
+}
+.review-heading {
+  width: 100%;
+}
+h2 {
+  color: blue;
+}
+h4 {
+  opacity: 0.5;
+}
+.download {
+  display: flex;
+  background-image: url("images/homebg.png");
+  height: 300px;
+  width: 100%;
+  flex-direction: row;
+  padding: 100px 100px;
+}
+.download-message {
+  margin: 20px 10px;
+  float: left;
+  min-width: 200px;
+}
+.download-links {
+  padding: 0px;
+    
+}
+.download-links button{
+    height:36px;
+    margin-top: 20px;
+  }
+.footer-image  {
+  float: right;
+  margin-left: 250px;
+}
+.footer-nav {
+    background-color:rgba(29, 10, 99, 0.973);
+    height: 100px;
+}
+.footer-nav {
+  text-align: center;
+}
+.footer-nav p {
+  color: rgb(97, 87, 87);
+}
