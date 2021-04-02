@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1" />
+  <title>Metacube Parking System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Top Navigation Bar -->
+  <nav>
+    <img id="metacubeLogo" src="meatcubeLogo.png" />
+    <div id="navBar">
+      <a class="navlink" id="employeeButton" href="#employee">Add Employee</a>
+      <a class="navlink" href="#vehicle">Add vehicle</a>
+      <a class="navlink" href="#feedback">FeedBack</a>
+      <a class="navlink" href="#pricing">Pricing</a>
+    </div>
+  </nav>
+
+  <!-- Image for banner -->
+
+  <img id="bannerImage" src="parking.jfif" />
+
+  <!-- Section of Adding new employee -->
+  <section id="employee">
+    <h3 class="sectionHead" onclick="showEmployee()" id="employee-head">Employee Details</h3>
+    <form id="employeeForm" class="collapsed">
+
+      <!-- Taking name of employee -->
+      <input type="text" id="Name" class="collapsed" onchange="startEmployeeProcess(event)" name="Name" />
+
+      <!-- Taking Gender of employee -->
+      <div id="gender" class="collapsed">
+        <label for="male">Male</label>
+        <input type="radio" onclick="startEmployeeProcess(event)" id="male" name="gender" value="male" />
+        <label for="female">Female</label>
+        <input type="radio" onclick="startEmployeeProcess(event)" id="Female" name="gender" value="female" />
+        <label for="other">Other</label>
+        <input type="radio" onclick="startEmployeeProcess(event)" id="other" name="gender" value="other" />
+      </div>
+
+      <input type="email" class="collapsed" onchange="startEmployeeProcess(event)" id="email" name="email" />
+
+      <!-- Password -->
+      <input type="password" class="collapsed" onchange="startEmployeeProcess(event)" id="password" name="password" />
+      <input type="password" class="collapsed" onchange="startEmployeeProcess(event)" id="confirm_password"
+        name="confirm_password" />
+
+      <!-- Contact details -->
+      <input type="tel" class="collapsed" onchange="startEmployeeProcess(event)" id="phone" name="phone" />
+
+    </form>
+  </section>
+
+  <!-- Section for adding an vehicle  -->
+  <section id="vehicle">
+    <h3 id="vehicle-head" class="sectionHead"> Vehicle Details </h3>
+    <form id="vehicle-form" class="collapsed">
+      <input type="text" class="collapsed" id="company" name="company" onchange="startVehicleProcess(event)" />
+      <select class="collapsed" onchange="startVehicleProcess(event)" name="type" id="type">
+        <option value="" default>select</option>
+        <option value="Cycle">Cycle</option>
+        <option value="Motor-Cycle">Motor-Cycle</option>
+        <option value="Four-wheelers">Four-wheelers</option>
+      </select>
+      <input class="collapsed type=" text" id="number" name="number" onchange=" startVehicleProcess(event)" />
+      <input class="collapsed" type="text" id="empId" name="empID" onchange=" startVehicleProcess(event)" />
+
+      <textarea class="collapsed" id="identification" name="Identification"
+        onkeypress="startVehicleProcess(event)"></textarea>
+
+    </form>
+  </section>
+
+  <!-- Section For Feedback -->
+  <section id="feedback">
+    <h3 class="feedbackHeading">Give us a feedback</h3>
+    <div class="feedback-input">
+      <div>
+        <input type="text" id="name" name="name" placeholder="name" />
+      </div>
+      <div>
+        <input type="email" id="emp-email" name="emp-email" placeholder="Email" />
+      </div>
+      <div>
+        <input type="text" id="subject" name="subject" placeholder="Subject" />
+      </div>
+      <div>
+        <textarea rows="4" cols="34" id="message" name="message" placeholder="Type your message here"></textarea>
+      </div>
+      <button id="messageButton">Send Feedback</button>
+    </div>
+  </section>
+
+  <!-- Section for pricing -->
+  <section id="pricing" class="collapsed">
+    <h3 class="sectionHead">Pricing details</h3>
+    <div id="vehicles">
+      <div id="Cycle" class="vehicleDisplay">
+        <h3 class="vehicleTitle">CYCLE</h3>
+        <select class="priceRange" name="price" id="cyclePrice" onchange="getPrice(event)">
+          <option value="" default>Select</option>
+          <option value="5">&#8377; 5 daily</option>
+          <option value="100">&#8377; 100 Monthly</option>
+          <option value="500">&#8377; 500 Yearly</option>
+        </select>
+
+        <select name="currency" id="currency" onchange="conversion(event)">
+          <option value="">Select</option>
+          <option value="Yen"> YEN </option>
+          <option value="Dollar"> DOLLAR</option>
+        </select>
+
+        <button class="purchaseButton" onclick="generatePass()">Get Pass</button>
+      </div>
+
+      <div id="Motor-Cycle" class="vehicleDisplay">
+        <h3 class="vehicleTitle">MOTOR CYCLE</h3>
+        <select class="priceRange" name="price" id="motorcyclePrice" onchange="getPrice(event)">
+          <option value="" default>Select</option>
+          <option value="10">&#8377; 10 daily</option>
+          <option value="200">&#8377; 200 Monthly</option>
+          <option value="1000">&#8377; 1000 Yearly</option>
+        </select>
+        <select name="currency" id="currency" onchange="conversion(event)">
+          <option value="">Select</option>
+          <option value="Yen"> YEN</option>
+          <option value="Dollar"> DOLLAR</option>
+        </select>
+
+        <button class="purchaseButton" onclick="generatePass()">Get Pass</button>
+      </div>
+
+      <div id="Four-wheelers" class="vehicleDisplay">
+        <h3 class="vehicleTitle">FOUR WHEELERS</h3>
+        <select class="priceRange" name="price" id="fourwheelersPrice" onchange="getPrice(event)">
+          <option value="" default>Select</option>
+          <option value="20">&#8377; 20 daily</option>
+          <option value="500">&#8377; 500 Monthly</option>
+          <option value="3500">&#8377; 3500 Yearly</option>
+        </select>
+        <select name="currency" id="currency" onchange="conversion(event)">
+          <option value="">Select</option>
+          <option value="Yen"> YEN </option>
+          <option value="Dollar"> DOLLAR </option>
+        </select>
+
+        <button class="purchaseButton" onclick="generatePass()">Get Pass</button>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+  <script src="getEmployeeValue.js"></script>
+  <script src="getVehicleValue.js"></script>
+  <script src="getPrice.js"></script>
+</body>
+
+</html>
